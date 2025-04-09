@@ -1,14 +1,10 @@
-import {  useContext } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { AuthContext } from "../../contexts";
 
-export default function Home(){
 
- const {user} = useContext(AuthContext)
-  
+export default function Search(){
     return(
         <View style={styles.Container}>
-            <Text>{user.nome} idade: {user.idade}</Text>
+            <Text>Pagina search</Text>
         </View>
     )
 }
