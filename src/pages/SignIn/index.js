@@ -35,7 +35,7 @@ export default function SigIn (){
          <View style={styles.Container}>
                 <Text style={styles.Title}>Dev<Text style={[styles.Title, {color:'#E52246'}]}>Post</Text></Text>
                 <TextInput style={styles.Input} placeholder="Seu nome..."/>
-                <TextInput secureTextEntry style={styles.Input} placeholder="Seu email..."/>
+                <TextInput style={styles.Input} placeholder="Seu email..."/>
                 <TextInput secureTextEntry style={styles.Input} placeholder="Sua senha..."/>
                 <TouchableOpacity activeOpacity={.8} style={styles.BotaoAcessar}>
                     <Text style={{fontSize:18, fontWeight:'800', color:'#fff'}}>Criar conta</Text>
