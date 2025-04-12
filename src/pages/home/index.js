@@ -8,7 +8,7 @@ export default function Home(){
   
     return(
         <View style={styles.Container}>
-            <Text>{user.nome} idade: {user.idade}</Text>
+            <Text>{user.nome}dd</Text>
         </View>
     )
 }

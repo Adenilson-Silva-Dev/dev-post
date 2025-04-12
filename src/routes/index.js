@@ -1,4 +1,4 @@
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, View } from "react-native";
 import AuthApp from "./app.routes"
 import AuthRouter from "./auth.routes"
 import { useContext } from "react";
@@ -6,13 +6,15 @@ import { AuthContext } from "../contexts";
 
 
 export default function Routes(){
-    const {signed} = useContext(AuthContext)
-  console.log(signed)
-    let loading = false;
+    const {signed,loading} = useContext(AuthContext)
+ 
+
 
     if(loading){
         return(
-            <ActivityIndicator size={"large"} color={"#121212"}/>
+           <View style={{flex:1, alignItems:'center',justifyContent:"center" ,backgroundColor:"#353840"}}>
+             <ActivityIndicator size={"large"} color={"#E52246"}/>
+           </View>
         )
     }
    return signed ? <AuthApp/> : <AuthRouter/>

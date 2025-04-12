@@ -1,7 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import Routes from "./src/routes";
 import { StatusBar } from "react-native";
-import { AuthProvider } from "./src/contexts";
+import AuthProvider from "./src/contexts";
 
 
 export default function App(){
